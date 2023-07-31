@@ -9,7 +9,7 @@ git clone https://github.com/JunnanShimizu/GameOfLife.git
 cd CheckoutSimulation
 ```
 
-Depending on which simukation, compile and run:
+Depending on which simulation you'd like to run, compile and run:
 
 ```
 javac Pick2CustomerSimulation.java
