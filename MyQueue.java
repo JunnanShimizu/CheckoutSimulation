@@ -7,6 +7,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+// Queue data structure
 public class MyQueue <T> implements Iterable<T>{
     private class Node{
         Node next;

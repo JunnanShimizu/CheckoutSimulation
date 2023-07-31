@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class PickyCustomer extends Customer{
 
     /*
-    constructor. This should call the super class's constructor with the given
+    Constructor. This should call the super class's constructor with the given
     number of items and num_lines as the initial value for the time steps.
     The PickyCustomer examines the lengths of all the lines before choosing one,
     so its initial time needs to reflect that.
@@ -18,7 +18,7 @@ public class PickyCustomer extends Customer{
         super(num_items, num_lines);
     }
 
-    //returns the index of the CheckoutAgent with the shortest line.
+    // Returns the index of the CheckoutAgent with the shortest line.
     public int chooseLine(ArrayList<CheckoutAgent> checkouts) {
         int min = Integer.MAX_VALUE;
         int shortestLine = -1;

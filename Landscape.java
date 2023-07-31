@@ -14,7 +14,7 @@ public class Landscape {
     ArrayList<CheckoutAgent> checkoutAgents;
     LinkedList<Customer> finished;
 
-    //constructor. The list of finished customers should be initialized to an empty list.
+    // Constructor. The list of finished customers should be initialized to an empty list.
     public Landscape(int w, int h, ArrayList<CheckoutAgent> checkouts ) {
         this.width = w;
         this.height = h;
@@ -22,17 +22,17 @@ public class Landscape {
         finished = new LinkedList<Customer>();
     }
 
-    // return the height of the Landscape.
+    // Return the height of the Landscape.
     public int getHeight(){
         return this.height;
     }
 
-    //return the width of the Landscape.
+    // Return the width of the Landscape.
     public int getWidth() {
         return this.width;
     }
 
-    //return a string indicating how many checkouts and finished customers are in the landscape.
+    // Return a string indicating how many checkouts and finished customers are in the landscape.
     public String toString() {
         String result = "";
         result += "Number of Checkouts: " + this.checkoutAgents.size() + "\n";
@@ -41,24 +41,26 @@ public class Landscape {
         return result;
     }
 
-    //add the Customer to the list of finished customers.
+    // Add the Customer to the list of finished customers.
     public void addFinishedCustomer(Customer c ){
         this.finished.add(c);
     }
 
-    //loop through the CheckoutAgents, calling the draw method on each.
+    // Loop through the CheckoutAgents, calling the draw method on each.
     public void draw( Graphics g ){
         for(CheckoutAgent current : this.checkoutAgents){
             current.draw(g);
         }
     }
 
+    // Updates the state of all CheckoutAgents
     public void updateCheckouts(){
         for(CheckoutAgent current : checkoutAgents){
             current.updateState(this);
         }
     }
 
+    // Prints finished customer statistics
     public void printFinishedCustomerStatistics(int trialNumber){
         double average = 0;
         double standardDeviation = 0;

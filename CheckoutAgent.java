@@ -11,19 +11,19 @@ public class CheckoutAgent {
     int y;
     MyQueue<Customer> queue;
 
-    //constructor. The queue should be initialized to an empty MyQueue<Customer>.
+    // Constructor. The queue should be initialized to an empty MyQueue<Customer>.
     public CheckoutAgent(int x, int y) {
         this.x = x;
         this.y = y;
         queue = new MyQueue<Customer>();
     }
 
-    //add a Customer to its queue.
+    // Add a Customer to its queue.
     public void addCustomerToQueue( Customer c ){
         this.queue.offer(c);
     }
 
-    //returns the number of Customers in its queue.
+    // Returns the number of Customers in its queue.
     public int getNumInQueue(){
         return this.queue.getSize();
     }
@@ -59,6 +59,7 @@ public class CheckoutAgent {
         }
     }
 
+    // For testing purposes.
     public static void main(String[] args){ //testing methods
         CheckoutAgent test = new CheckoutAgent(10, 10);
         Customer customer1 = new PickyCustomer(3, 2);

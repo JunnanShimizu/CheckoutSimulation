@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.ArrayList;
 
 public class TestPickyCustomer {
-    // test function that creates a new LandscapeDisplay and populates it with 5 checkouts and 99 customers.
+    // Test function that creates a new LandscapeDisplay and populates it with 5 checkouts and 99 customers.
     public static void main(String[] args) throws InterruptedException {
         Random gen = new Random();
         ArrayList<CheckoutAgent> checkouts = new ArrayList<CheckoutAgent>(5);
