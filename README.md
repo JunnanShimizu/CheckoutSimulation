@@ -13,19 +13,13 @@ Depending on which simukation, compile and run:
 
 ```
 javac Pick2CustomerSimulation.java
-```
-```
 java Pick2CustomerSimulation.java
 ```
 ```
 javac PickyCustomerSimulation.java
-```
-```
 java PickyCustomerSimulation.java
 ```
 ```
 javac RandomCustomerSimulation.java
-```
-```
 java RandomCustomerSimulation.java
 ```
