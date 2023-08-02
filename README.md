@@ -23,3 +23,5 @@ java PickyCustomerSimulation.java
 javac RandomCustomerSimulation.java
 java RandomCustomerSimulation.java
 ```
+
+<img width="568" alt="Screenshot 2023-08-01 at 11 17 54 PM" src="https://github.com/JunnanShimizu/CheckoutSimulation/assets/67613527/ee819a57-58d7-45ee-83f5-7e93b4fed978">
